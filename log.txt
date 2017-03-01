@@ -1,0 +1,90 @@
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 15:11:32
+A joined the game.
+B joined the game.
+C joined the game.
+A left the game.
+B won the game.
+C left the game.
+B left the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 15:14:49
+ left the game.
+Sen joined the game.
+Nig joined the game.
+Sen to ALL: hello
+Sen won the game.
+Nig left the game.
+Sen left the game.
+Bill joined the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 15:33:37
+jeff joined the game.
+osama joined the game.
+osama to jeff: allah
+jeff to osama: allahu akbar
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 16:16:47
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 16:16:49
+Sean joined the game.
+ left the game.
+Sean left the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 16:18:00
+Sean joined the game.
+Sean2 joined the game.
+Sean left the game.
+Sean2 left the game.
+Sean3 joined the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 16:19:11
+Euler joined the game.
+ left the game.
+Euler left the game.
+ left the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 16:20:58
+euler joined the game.
+euler joined the game.
+euler joined the game.
+gauss joined the game.
+gauss joined the game.
+gauss joined the game.
+hilbert joined the game.
+hilbert joined the game.
+hilbert joined the game.
+euler won the game.
+euler left the game.
+euler left the game.
+hilbert left the game.
+hilbert left the game.
+gauss left the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 16:34:32
+A joined the game.
+A joined the game.
+A joined the game.
+B joined the game.
+B joined the game.
+B joined the game.
+C joined the game.
+C joined the game.
+C joined the game.
+C won the game.
+C left the game.
+C left the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 16:35:56
+Sean joined the game.
+Sean joined the game.
+Sean joined the game.
+B joined the game.
+B joined the game.
+B joined the game.
+d joined the game.
+d joined the game.
+d joined the game.
+Sean won the game.
+Sean left the game.
+Sean left the game.
