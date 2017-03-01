@@ -99,7 +99,7 @@ public class GameLogic {
 				answer = quitGame(user);
 				break;
 			case "SHOUT":
-				shout(action.substring(5).trim(), user);
+				shout(action.substring(6).trim(), user);
 				answer = "";
 				break;
 			default:
@@ -123,14 +123,11 @@ public class GameLogic {
 
 		String[] nameString = shoutString.split(" ");
 		int nameLength = nameString[0].length();
-		boolean PrivateChatBool = false;
-		String[] atString = nameString[0].split("");
 
-		if (atString[0].equals("$")) {
+		if (nameString[0].startsWith("$")) {
 			for (User userTest : players) {
 				try {
-					if ((nameString[0].substring(1)).equals(userTest.getName()) && userTest.getType() == 'P') {
-						PrivateChatBool = true;
+					if (((nameString[0].substring(1)).equals(userTest.getName())) && (userTest.getType() == 'P')) {
 						PrintWriter output = new PrintWriter(userTest.getSocket().getOutputStream(), true);
 						// write to file
 						chatLogger.chatLog(user.getName() + " to " + userTest.getName() + ": " + shoutString.substring(nameLength).trim());
@@ -142,7 +139,7 @@ public class GameLogic {
 			}
 		}
 
-		if (!PrivateChatBool) {
+		else {
 			for (User userTest : players) {
 				if (userTest.getID() != user.getID() && userTest.getType() == 'P') {
 					try {
