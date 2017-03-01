@@ -11,7 +11,6 @@ public class SendToFile {
 	private String fileName = "log.txt";
 	BufferedWriter bw = null;
 	FileWriter fw = null;
-	
 	/**
 	 * In chatLog the file writer writes to the fileName given above
 	 * Then the buffered writer feeds into file writer
