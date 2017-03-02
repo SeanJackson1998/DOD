@@ -26,7 +26,6 @@ public class User {
 		this.Name = Name;
 	}
 
-	
 	/**
 	 * This accessor gets the name for the user
 	 */
@@ -41,7 +40,6 @@ public class User {
 		Name = name;
 		return Name;
 	}
-	
 	
 	/**
 	 * This mutator sets the id for the user

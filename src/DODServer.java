@@ -12,7 +12,7 @@ public class DODServer{
 	/**
 	 * The DOD server will be made using a port number
 	 * Then the server socket is made allowing clients to join
-	 * the a user is created after the client joins the server
+	 * then a user is created after the client joins the server
 	 * Then a thread of the new client is created
 	 */
 	public static void main(String[] args) throws SocketException {
@@ -21,7 +21,6 @@ public class DODServer{
 	        System.err.println("Usage: java DODMultiServer <port number>");
 	        System.exit(1);
 	    }
-	    	
 	        int portNumber = Integer.parseInt(args[0]);
 	        int playerID = 0;
 	        GameLogic game = new GameLogic();

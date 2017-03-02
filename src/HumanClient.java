@@ -31,26 +31,19 @@ public class HumanClient {
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         ) {
             BufferedReader stdIn = new BufferedReader(new InputStreamReader(System.in));
-            
+
             out.println("human");
-          
+
             String fromUser;
-            
+
             System.out.println("Connected");
-            
             System.out.print("Choose a name: ");
-            
+
             String name;
             
             fromUser = stdIn.readLine();
             name = fromUser; 
             out.println(fromUser);
-            
-//            do{
-//            fromUser = stdIn.readLine();
-//            name = fromUser; 
-//            out.println(fromUser);
-//            }while(!(fromServer = in.readLine()).equals("unique"));
 
             System.out.println("Welcome to dungeons of doom " + name + "!");
             System.out.println("You already know most of the commands, but with the new chat system there's a few more.");
@@ -62,8 +55,7 @@ public class HumanClient {
             // OutThread to output anything to the terminal that is waiting to be displayed
             new OutThread(in).start();
             
-            while (!(fromUser = stdIn.readLine()).equalsIgnoreCase("quit")) {     	
-
+            while (!(fromUser = stdIn.readLine()).equalsIgnoreCase("quit")) {
             	System.out.println(name + ": " + fromUser);
                 out.println(fromUser);
             }

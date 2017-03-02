@@ -156,7 +156,6 @@ public class Map {
 			}
 
 			tempMap.add(row);
-
 			in = reader.readLine();
 		}
 		
@@ -222,6 +221,4 @@ public class Map {
 		this.mapName = name;
 		return false;
 	}
-
 }
-	

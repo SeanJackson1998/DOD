@@ -70,24 +70,12 @@ public class ThreadClient extends Thread{
 						System.err.println("sleep is messed up");
 					}
             	}
-            	
             }
             else{
 
             	Name = in.readLine();
         		correctUser.setName(Name);
 
-            	// ------------------------------------------------------------------------------------------
-            	/**
-            	 * when the user is first made, it must be given a name for the chat system
-            	 */
-//            	do {
-//            		Name = in.readLine();
-//            		correctUser.setName(Name);              	
-//            	}while(!game.uniqueName(correctUser));
-            	//==================================================================================================
-
-            	// check to see if the names are unique
             	game.playerConnected(correctUser, " joined the game.");
 
             	while ((inputLine = in.readLine()) != null && !correctUser.getSocket().isClosed() && game.isGameRunning()){
@@ -113,9 +101,7 @@ public class ThreadClient extends Thread{
 					}
 	            }
         }
-            
-            
-         
+
         } catch (SocketException e) {
         	if(game.isGameRunning())
         	{
@@ -127,7 +113,6 @@ public class ThreadClient extends Thread{
         		game.quitGame(correctUser);
             	game.removeUser(correctUser);
         	}
-        	
         }catch (IOException e) {
             e.printStackTrace();
         }

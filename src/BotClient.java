@@ -29,7 +29,6 @@ public class BotClient {
 	    	out.println("bot");
 	    	
 	        String fromServer = " ";
-	        
 	        System.out.println("Connected");
 	        
 	        while (fromServer != null) {  
@@ -37,7 +36,6 @@ public class BotClient {
 	        	fromServer = in.readLine();
 	        	System.out.println("Server: " + fromServer);        	
 	        }
-	        
 	    } catch (UnknownHostException e) {
 	        System.err.println("Don't know about host " + hostName);
 	        System.exit(1);
