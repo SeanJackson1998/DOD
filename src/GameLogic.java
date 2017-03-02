@@ -462,7 +462,7 @@ public class GameLogic {
 					System.err.println("Print Writer error in pJ");
 				}
 			}
-			chatLogger.chatLog(user.getName() + message);
 		}
+		chatLogger.chatLog(user.getName() + message);
 	}
 }

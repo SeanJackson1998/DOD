@@ -51,7 +51,8 @@ public class ThreadClient extends Thread{
             	String command;
             	Name = "Bot" + Integer.toString(playerID);
             	correctUser.setName(Name);
-            	
+				game.playerConnected(correctUser, " joined the game.");
+
             	/**
             	 * while the game is running, the bot is set to the user like the human client,
             	 * Then the automated random commands are generated and processed like the human client

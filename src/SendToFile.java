@@ -24,7 +24,7 @@ public class SendToFile {
 		try{
 			fw = new FileWriter(fileName, true);
 			bw = new BufferedWriter(fw);
-			bw.write(chatLine + System.lineSeparator());	
+			bw.write(chatLine + "\r\n");
 		} catch (IOException e){
 			System.err.println("File Writer messed up");
 		}  finally {
