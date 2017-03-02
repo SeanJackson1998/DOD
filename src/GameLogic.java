@@ -99,7 +99,7 @@ public class GameLogic {
 				answer = quitGame(user);
 				break;
 			case "SHOUT ":
-				shout(action.substring(6).trim(), user);
+				shout(action.substring(5).trim(), user);
 				answer = "";
 				break;
 			default:

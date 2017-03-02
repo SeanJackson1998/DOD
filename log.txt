@@ -140,3 +140,81 @@ dfg joined the game.
 vf joined the game.
 vf joined the game.
 vf to dfg: fsd
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 21:42:42
+A joined the game.
+A joined the game.
+A joined the game.
+B joined the game.
+B joined the game.
+B joined the game.
+C joined the game.
+C joined the game.
+C joined the game.
+A to ALL: B
+A to B: hi b
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 21:46:06
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 21:46:22
+A joined the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 21:48:07
+A joined the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 21:53:42
+Sean joined the game.
+Sean joined the game.
+Li joined the game.
+Li joined the game.
+Li joined the game.
+Li to ALL: hi
+Sean left the game.
+Sean left the game.
+Sean left the game.
+Li left the game.
+Li left the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 22:14:35
+Sean joined the game.
+Manav joined the game.
+Manav joined the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 22:17:20
+Sean joined the game.
+Sean joined the game.
+ left the game.
+ left the game.
+---------------------------------------------------------------------------------
+Game Started: 01/03/17 22:19:14
+Sean joined the game.
+Sean left the game.
+---------------------------------------------------------------------------------
+Game Started: 02/03/17 15:25:58
+Swan joined the game.
+Swan joined the game.
+Bill joined the game.
+Bill joined the game.
+Bill joined the game.
+Bill left the game.
+Bill left the game.
+Bill left the game.
+Swan left the game.
+Swan left the game.
+---------------------------------------------------------------------------------
+Game Started: 02/03/17 15:43:07
+Sean joined the game.
+lol joined the game.
+lol joined the game.
+Sean left the game.
+Sean left the game.
+lol left the game.
+---------------------------------------------------------------------------------
+Game Started: 02/03/17 15:45:10
+s joined the game.
+s joined the game.
+s to ALL: hello
+bill joined the game.
+bill joined the game.
+s left the game.
+s left the game.
