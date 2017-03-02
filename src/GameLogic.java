@@ -26,11 +26,10 @@ public class GameLogic {
 		// new chat logger to write to the log.txt file
 		chatLogger = new SendToFile();
 
-		// initial player positions on the map
+		// stores player positions on the map
 		playerPosition = new int[2];
 
 		// collectedGold[0] is human players total collected gold
-		// collectedGold[1] is bot players total collected gold
 		collectedGold = 0;
 
 	}
@@ -98,7 +97,7 @@ public class GameLogic {
 			case "QUIT":
 				answer = quitGame(user);
 				break;
-			case "SHOUT ":
+			case "SHOUT":
 				shout(action.substring(5).trim(), user);
 				answer = "";
 				break;
@@ -113,7 +112,7 @@ public class GameLogic {
 	 * The shout method will send the global chat message to all of the human clients
 	 * It will also call the send to file class so that the chat is recorded in the file.
 	 * Then the output is sent to the out thread where it will be displayed to the client consoles
-	 * <p>
+	 *
 	 * However if the the chat is private and there is a name with a '$' at the start then the message will be sent to that play only
 	 *
 	 * @param shoutString
@@ -146,14 +145,19 @@ public class GameLogic {
 						PrintWriter output = new PrintWriter(userTest.getSocket().getOutputStream(), true);
 						output.println(user.getName() + " says: " + shoutString);
 					} catch (IOException e) {
-						System.err.println("Shout Print Writer error pC");
+						System.err.println("Shout Print Writer error");
 					}
 				}
 
 			}
 			chatLogger.chatLog(user.getName() + " to ALL: " + shoutString.trim());
 		}
-
+		try {
+			PrintWriter output = new PrintWriter(user.getSocket().getOutputStream(), true);
+			output.println("Message Sent");
+		} catch (IOException e) {
+			System.err.println("Shout Print Writer error");
+		}
 	}
 
 	/**
@@ -193,7 +197,6 @@ public class GameLogic {
 				break;
 		}
 
-
 		if ((map.getTile(newX, newY) != '#') && checkMoveTile(newX, newY, user.getID())) {
 
 			// set coordinates for player
@@ -203,7 +206,6 @@ public class GameLogic {
 			// set coordinates for object to new coordinates of player
 			user.setX(newX);
 			user.setY(newY);
-
 
 			if (checkWin()) {
 				gameRunning = false;
@@ -215,7 +217,6 @@ public class GameLogic {
 			return "FAIL";
 		}
 	}
-
 
 	/**
 	 * checks if the player collected all GOLD and is on the exit tile
@@ -250,12 +251,10 @@ public class GameLogic {
 			int userXDif = getPlayersXCoordinate() - userTest.getX();
 			int userYDif = getPlayersYCoordinate() - userTest.getY();
 
-
 			if (Math.abs(userXDif) <= 2 && Math.abs(userYDif) <= 2) {
 				// check the character for if its a BOT as well
 				look[2 - userXDif][2 - userYDif] = userTest.getType();
 			}
-
 		}
 
 		// return look window as a String for printing
@@ -284,7 +283,6 @@ public class GameLogic {
 
 		return "FAIL There is nothing to pick up...";
 	}
-
 
 	/**
 	 * Quits the game when called
@@ -315,7 +313,6 @@ public class GameLogic {
 		User user = new User(map.getMapWidth(), map.getMapHeight(), id, 0, type, socket1, "");
 		players.add(user);
 	}
-
 
 	/**
 	 * Takes the input and processes the command for the user
@@ -358,9 +355,7 @@ public class GameLogic {
 		int x = user.getX();
 		int y = user.getY();
 		boolean onlyUser;
-
 		char tile = map.getTile(x, y);
-
 		Random random = new Random();
 
 		do {
@@ -377,7 +372,6 @@ public class GameLogic {
 				}
 			}
 		} while (tile == '#' || !onlyUser);
-
 
 		user.setX(x);
 		user.setY(y);
@@ -398,7 +392,6 @@ public class GameLogic {
 				break;
 			}
 		}
-
 		return onlyUser;
 	}
 
@@ -421,7 +414,6 @@ public class GameLogic {
 		}
 		return command;
 	}
-
 
 	/**
 	 * finish game will output to the other users who won.
@@ -468,37 +460,9 @@ public class GameLogic {
 				} catch (IOException e) {
 					e.printStackTrace();
 					System.err.println("Print Writer error in pJ");
-				/*} finally {
-					try {
-						userTest.getSocket().close();
-					} catch (Exception e) {
-						System.out.println("ERROR!");
-						e.printStackTrace();
-					}
-				}*/
 				}
-
 			}
 			chatLogger.chatLog(user.getName() + message);
-
 		}
-	
-	
-	/*public boolean uniqueName(User user) {
-		for (User userTest : players) {
-			if((user.getID() != userTest.getID()) && user.getName().equals((userTest).getName()));
-			{
-				try {
-					PrintWriter output = new PrintWriter(user.getSocket().getOutputStream(), true);
-					output.println(user.getID() + " " + userTest.getID());
-					output.println("This name is already taken");
-					return false;
-				} catch (IOException e) {
-						System.err.println("Shout Print Writer error");
-				}
-			}			
-		}
-		return true;
-	}*/
 	}
 }
