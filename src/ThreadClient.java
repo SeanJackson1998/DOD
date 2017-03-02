@@ -70,6 +70,7 @@ public class ThreadClient extends Thread{
 						System.err.println("sleep is messed up");
 					}
             	}
+				game.finishGame(correctUser);
             }
             else{
 
@@ -79,7 +80,6 @@ public class ThreadClient extends Thread{
             	game.playerConnected(correctUser, " joined the game.");
 
             	while ((inputLine = in.readLine()) != null && !correctUser.getSocket().isClosed() && game.isGameRunning()){
-            		quitbool = false;
 	            	// sets it to the player coordinates of this thread
 	            	correctUser = game.getCorrectUser(playerID);
 	            	game.setUser(correctUser);

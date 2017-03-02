@@ -259,3 +259,22 @@ Joe to ALL: hi
 Sean left the game.
 Sean left the game.
 Joe left the game.
+---------------------------------------------------------------------------------
+Game Started: 02/03/17 16:41:32
+Sean joined the game.
+Sean joined the game.
+Manav joined the game.
+Manav joined the game.
+Sean to ALL: i got some gold!
+Manav to Sean: welldone
+---------------------------------------------------------------------------------
+Game Started: 02/03/17 16:47:28
+Sean joined the game.
+Sean joined the game.
+Bill joined the game.
+Bill joined the game.
+Bill joined the game.
+Bot0 won the game.
+Bill left the game.
+Bill left the game.
+Sean left the game.
