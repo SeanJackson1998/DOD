@@ -25,7 +25,7 @@ public class OutThread extends Thread {
 	             }
 	         }
 	     } catch (IOException|NullPointerException e) {
-	     	System.out.println("Server crashed: type 'quit' to exit");
+	     	System.out.println("Disconnected from Server: type 'quit' to exit");
 	     }	    
 	 }
 }

@@ -8,9 +8,11 @@ public class SendToFile {
 	 * This class is to send the chat information to the file
 	 * The file name and writers are declared below
 	 */
+
 	private String fileName = "log.txt";
 	BufferedWriter bw = null;
 	FileWriter fw = null;
+
 	/**
 	 * In chatLog the file writer writes to the fileName given above
 	 * Then the buffered writer feeds into file writer

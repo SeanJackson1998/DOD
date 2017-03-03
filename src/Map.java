@@ -104,7 +104,7 @@ public class Map {
      */
     public void readMap() {
     	try {
-    		BufferedReader reader = new BufferedReader(new FileReader(new File("maps","example_map.txt")));
+    		BufferedReader reader = new BufferedReader(new FileReader(new File("example_map.txt")));
     		map = loadMap(reader);
 		} 
     	catch (FileNotFoundException e1) {
